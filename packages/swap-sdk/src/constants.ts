@@ -14,6 +14,7 @@ export enum ChainId {
   POLYGON_MUMBAI = 80001,
   CREDIT = 4400,
   AVALANCHE = 43114,
+  RAZEN = 3838,
 }
 
 export enum TradeType {
