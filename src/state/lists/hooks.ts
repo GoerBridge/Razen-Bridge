@@ -195,6 +195,7 @@ function combineMaps(map1: TokenAddressMap, map2: TokenAddressMap): TokenAddress
     [ChainId.POLYGON_MUMBAI]: { ...map1[ChainId.POLYGON_MUMBAI], ...map2[ChainId.POLYGON_MUMBAI] },
     [ChainId.CREDIT]: { ...map1[ChainId.CREDIT], ...map2[ChainId.CREDIT] },
     [ChainId.AVALANCHE]: { ...map1[ChainId.AVALANCHE], ...map2[ChainId.AVALANCHE] },
+    [ChainId.RAZEN]: { ...map1[ChainId.RAZEN], ...map2[ChainId.RAZEN] },
   }
 }
 
