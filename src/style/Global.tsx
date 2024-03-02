@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
     color:#1a0c2e
   }
   body {
-    background-color: #000;
-    // background-image: url('/images/background/bg.jpg');
+    // background-color: #000;
+    background-image: url('/images/background/bg.jpeg');
     background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
