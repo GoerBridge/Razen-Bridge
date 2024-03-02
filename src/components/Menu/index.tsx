@@ -38,7 +38,7 @@ const WrapMenu = styled.div`
     z-index: 10;
     padding: 7px 15px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(174, 174, 174, 0.6);
     gap: 10px;
   }
 `
@@ -82,8 +82,8 @@ const Menu = ({ children }) => {
       <InnerBody>{children}</InnerBody>
       <Footer>
         Powered by{' '}
-        <a href={process.env.NEXT_PUBLIC_APP_URL ?? '/'} target="_blank" style={{ color: '#5ce1e6' }} rel="noreferrer">
-          Teleportstation.io
+        <a href={process.env.NEXT_PUBLIC_APP_URL ?? '/'} target="_blank" style={{ color: '#35A9E0' }} rel="noreferrer">
+          Bankroll.pro
         </a>
       </Footer>
     </WrapMenu>

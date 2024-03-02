@@ -39,7 +39,7 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&amp;display=swap" rel="stylesheet" />
           <link rel="shortcut icon" href="/images/logo/logo-icon.png" />
-          <link rel="apple-touch-icon" href="/logo.png" />
+          <link rel="apple-touch-icon" href="/logo.svg" />
           <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>

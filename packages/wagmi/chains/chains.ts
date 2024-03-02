@@ -23,6 +23,30 @@ export const avalandche: Chain = {
   },
 }
 
+export const razenChain: Chain = {
+  id: 3838,
+  name: 'Razen Mainnet',
+  network: 'RZN',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'Razen mainnet',
+    symbol: 'RZN',
+  },
+  rpcUrls: {
+    default: 'https://rpc.rznscan.com/',
+    public: 'https://rpc.rznscan.com/',
+  },
+
+  blockExplorers: {
+    default: { name: 'Scan Razen native token', url: 'https://rznscan.com' },
+  },
+
+  multicall: {
+    address: '0xF29E55716672C3011BcB8e4b32ff34037A072E80',
+    blockCreated: 1269263,
+  },
+}
+
 export const avalandcheFuji: Chain = {
   id: 43113,
   name: 'Avalanche Fuji',
