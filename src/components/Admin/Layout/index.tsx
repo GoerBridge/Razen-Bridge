@@ -196,6 +196,7 @@ const RequireLoginStyled = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 `
 const WMenuStyled = styled.div`
   list-style: none;

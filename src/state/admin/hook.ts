@@ -26,7 +26,7 @@ export const useGetOwner = () => {
 }
 function getAddressDetailFromApi(address) {
   return axios
-    .get(`${process.env.NEXT_PUBLIC_SCAN_API}https://scan-api.creditsmartchain.com/api/v1/address/${address}`, {
+    .get(`${process.env.NEXT_PUBLIC_SCAN_API}/address/${address}`, {
       method: 'GET',
     })
     .then((res) => {
