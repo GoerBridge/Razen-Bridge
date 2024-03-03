@@ -39,7 +39,7 @@ import BigNumber from 'bignumber.js'
 import { useCurrency } from 'hooks/Tokens'
 // eslint-disable-next-line lodash/import-scope
 import _ from 'lodash'
-import { avalandche, bsc, creditChain } from '@pancakeswap/wagmi/chains'
+import { avalandche, bsc, creditChain, razenChain } from '@pancakeswap/wagmi/chains'
 import BridgeABI from '../../config/abi/Bridge.json'
 import SelectChain from './components/SelectChain'
 import WInput from './components/WInput'
@@ -224,6 +224,7 @@ const Home = ({ pageSupportedChains }: { pageSupportedChains: number[] }) => {
   const [gasFee, setGasFee] = useState(null)
   const bridgeContract = useBridgeContract(formValue?.currency?.contract_bridge)
   const { balance: getBalance } = useTokenBalance(formValue?.currency?.token_address)
+  console.log('bridgeContract', bridgeContract)
 
   let currencyBalance = 0
 
@@ -253,7 +254,7 @@ const Home = ({ pageSupportedChains }: { pageSupportedChains: number[] }) => {
   const getToChain = async () => {
     const listToBlockchain = await bridgeContract.listBlockchainTo()
     const supportedToChain = _.intersection(
-      [bsc, creditChain, avalandche].map((item) => item.network),
+      [bsc, razenChain].map((item) => item.network),
       listToBlockchain,
     )
     setToChainList(supportedToChain)
