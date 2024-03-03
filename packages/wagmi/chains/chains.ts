@@ -26,7 +26,7 @@ export const avalandche: Chain = {
 export const razenChain: Chain = {
   id: 3838,
   name: 'Razen Mainnet',
-  network: 'RZN',
+  network: 'RAZEN',
   nativeCurrency: {
     decimals: 18,
     name: 'Razen mainnet',
